@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import Link from "next/link";
 
-export default function WaitlistPage() {
+import LeadDetails from '@/components/leadDetails';
+
+export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100 font-sans flex items-center justify-center px-4 py-12">
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-6 bg-white rounded-lg shadow-lg overflow-hidden">
@@ -43,7 +45,7 @@ export default function WaitlistPage() {
 
           <div className="flex -space-x-3 mb-4">
             {[75, 76, 77, 78, 79].map((id) => (
-              <Image
+              <img
                 key={id}
                 src={`https://randomuser.me/api/portraits/${id % 2 === 0 ? 'women' : 'men'}/${id}.jpg`}
                 alt={`User ${id}`}
@@ -54,28 +56,7 @@ export default function WaitlistPage() {
             ))}
           </div>
 
-          <form action="/api/submit" method="POST" className="space-y-4">
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your Name"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
-            >
-              Join the Waitlist
-            </button>
-          </form>
+          <LeadDetails />
 
           <p className="text-xs text-gray-500 mt-4">
             By clicking “Join”, you agree to our <Link href="#" className="underline">Privacy Policy</Link> and <Link href="#" className="underline">Terms of Use</Link>.
