@@ -30,7 +30,7 @@ export async function submitDetails(name, email) {
 }
 
 async function sendConfirmationEmail(name, email) {
-    const logoUrl = `${process.env.websiteURL}/logo.png`
+    const logoUrl = `https://fiuzar-waitlist.vercel.app/logo.png`
 
     const transport = nodemailer.createTransport({
         host: "smtp.gmail.com",
