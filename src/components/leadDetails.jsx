@@ -21,7 +21,7 @@ export default function LeadDetails() {
         const { success, message } = await submitDetails(name, email)
 
         if (success) {
-            router.push("/confirmed")
+            router.push("/https:/fiuzar.vercel.app")
             setIsSuccess(true)
         }
         else {
