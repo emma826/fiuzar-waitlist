@@ -65,7 +65,7 @@ export default function Home() {
 			</div>
 
 			<div>
-				<Card className="mx-3 px-3">
+				<Card className="px-3 mx-auto max-w-96">
 
 					<h2 className="text-3xl font-bold mb-2 text-green-900">Join our journey and get early access</h2>
 					<p className="text-gray-600">Be one of the first to try Fiuzar and receive our free repurposing checklist instantly.</p>
