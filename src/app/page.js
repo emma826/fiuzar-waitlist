@@ -45,12 +45,10 @@ export default function Home() {
 
           <div className="flex -space-x-3 mb-4">
             {[75, 76, 77, 78, 79].map((id) => (
-              <img
-                key={id}
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={id}
                 src={`https://randomuser.me/api/portraits/${id % 2 === 0 ? 'women' : 'men'}/${id}.jpg`}
                 alt={`User ${id}`}
-                width={40}
-                height={40}
                 className="rounded-full border-2 border-white object-cover"
               />
             ))}
