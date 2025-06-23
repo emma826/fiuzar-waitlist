@@ -77,7 +77,7 @@ async function sendConfirmationEmail(name, email) {
                         display: inline-block;
                         margin-top: 1.5rem;
                         padding: 12px 24px;
-                        background-color: #007bff;
+                        background-color: #033106;
                         color: #ffffff !important;
                         text-decoration: none;
                         border-radius: 5px;
@@ -118,7 +118,7 @@ async function sendConfirmationEmail(name, email) {
                     If you have any questions, feel free to reply to this email.<br><br>
                     Best regards,<br>
                     Francis<br>
-                    Founder, Fiuzar
+                    Lead Marketer, Fiuzar
                     </p>
 
                     <div class='footer'>
