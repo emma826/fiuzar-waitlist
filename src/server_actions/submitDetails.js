@@ -25,6 +25,7 @@ export async function submitDetails(name, email) {
         return {success: true, message : "Submitted successfully, redirecting ..."}
 
     } catch (error) {
+        console.error(error)
         return { success: false, message: "Server error, please try again later" }
     }
 }
@@ -133,6 +134,7 @@ async function sendConfirmationEmail(name, email) {
         await transport.sendMail(mailOptions)
         return { success: true }
     } catch (error) {
+        console.error(error)
         return { success: false }
     }
 }

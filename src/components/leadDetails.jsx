@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { useRouter } from "next/navigation"
 
 import { Input } from "./ui/input"
@@ -21,7 +21,7 @@ export default function LeadDetails() {
         const { success, message } = await submitDetails(name, email)
 
         if (success) {
-            router.push("/https:/fiuzar.vercel.app")
+            router.push("https://fiuzar.vercel.app")
             setIsSuccess(true)
         }
         else {
